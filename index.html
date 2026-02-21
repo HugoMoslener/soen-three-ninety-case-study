@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="UX/UI Case Study" />
+    <title>Health Companion Super App — UX/UI Case Study</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Clean, Medium-ish type -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+<!-- Top bar -->
+<header class="topbar">
+    <div class="container topbar__inner">
+        <a class="brand" href="#top">Case Study</a>
+        <nav class="topnav">
+            <a href="#overview">Overview</a>
+            <a href="#research">Research</a>
+            <a href="#personas">Personas</a>
+            <a href="#journey">Journey</a>
+            <a href="#wireframes">Wireframes</a>
+            <a href="#prototype">Prototype</a>
+            <a href="#testing">Testing</a>
+            <a href="#reflection">Reflection</a>
+        </nav>
+        <button class="iconbtn" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+            ☾
+        </button>
+    </div>
+</header>
+
+<main id="top" class="container layout">
+    <!-- Sticky table of contents -->
+    <aside class="toc" aria-label="Table of contents">
+        <div class="toc__title">On this page</div>
+        <nav class="toc__nav" id="tocNav">
+            <!-- JS can highlight current section -->
+            <a href="#overview">Overview</a>
+            <a href="#problem">Problem</a>
+            <a href="#solution">Proposed Solution</a>
+            <a href="#research">User Research</a>
+            <a href="#personas">Personas</a>
+            <a href="#journey">User Journey</a>
+            <a href="#wireframes">Wireframes & Iterations</a>
+            <a href="#prototype">Prototype</a>
+            <a href="#testing">Usability Testing</a>
+            <a href="#reflection">Reflection</a>
+            <a href="#appendix">Appendix</a>
+        </nav>
+    </aside>
+
+    <!-- Article content -->
+    <article class="article">
+        <!-- Hero -->
+        <section class="hero" id="overview">
+            <p class="kicker">SOEN 357 • Mini Project</p>
+            <h1>UX/UI Case Study: Health Companion Super App</h1>
+            <p class="subtitle">
+                A mobile app experience for managing medications, appointments, and communication with healthcare professionals.
+            </p>
+
+            <div class="meta">
+                <div><span class="meta__label">Role:</span> UX Research • UX Design • UI Design</div>
+                <div><span class="meta__label">Tools:</span> Figma • Google Forms • Notion</div>
+                <div><span class="meta__label">Timeline:</span> 2–3 weeks</div>
+            </div>
+
+            <figure class="media">
+                <img src="assets/hero.png" alt="Hero image" data-lightbox />
+                <figcaption>Hero / cover image (replace with your own).</figcaption>
+            </figure>
+
+            <div class="callouts">
+                <div class="callout">
+                    <div class="callout__title">Deliverables</div>
+                    <ul>
+                        <li>Research summary + personas</li>
+                        <li>User journey map</li>
+                        <li>Wireframes + iterations</li>
+                        <li>Clickable prototype</li>
+                        <li>Usability testing plan + findings</li>
+                    </ul>
+                </div>
+                <div class="callout">
+                    <div class="callout__title">Outcome</div>
+                    <p>
+                        A clear end-to-end flow for reminders, appointment scheduling, and patient-provider messaging.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr />
+
+        <section id="problem">
+            <h2>Problem</h2>
+            <p>
+                People with chronic conditions often juggle multiple medications and appointments. Missed doses and forgotten follow-ups
+                can lead to worse outcomes and stress.
+            </p>
+        </section>
+
+        <section id="solution">
+            <h2>Proposed Solution</h2>
+            <p>
+                A health companion “super app” that supports reminders, tracking, appointment management, and communication.
+            </p>
+
+            <div class="grid2">
+                <div class="card">
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Medication reminders + adherence log</li>
+                        <li>Doctor appointment scheduling + calendar</li>
+                        <li>Messaging / sharing updates with professionals</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Design Principles</h3>
+                    <ul>
+                        <li>Clarity over density</li>
+                        <li>Accessibility (type scale, contrast, tap targets)</li>
+                        <li>Reduce cognitive load</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="research">
+            <h2>User Research</h2>
+            <p class="sectionlead">
+                Describe your research methods and what you learned (surveys, interviews, secondary research).
+            </p>
+
+            <h3>Methods</h3>
+            <ul>
+                <li><strong>Survey</strong> (n=__): adherence habits, reminder preferences, pain points</li>
+                <li><strong>Interviews</strong> (n=__): routines, barriers, motivations</li>
+                <li><strong>Secondary research</strong>: chronic-care UX patterns and accessibility best practices</li>
+            </ul>
+
+            <h3>Key Insights</h3>
+            <div class="bullets">
+                <div class="bullet">✅ Users want <strong>fewer steps</strong> to confirm a dose taken.</div>
+                <div class="bullet">✅ Appointments need <strong>one-screen clarity</strong> (date/time/location/prep).</div>
+                <div class="bullet">✅ Messaging must feel <strong>safe and simple</strong> (no clutter).</div>
+            </div>
+        </section>
+
+        <section id="personas">
+            <h2>Personas</h2>
+            <p>Add 2–3 personas with goals, motivations, pain points, and usage patterns.</p>
+
+            <div class="persona">
+                <div class="persona__header">
+                    <h3>Persona 1: “Alex”</h3>
+                    <p class="muted">Age __ • Condition __ • Tech comfort __</p>
+                </div>
+                <div class="grid2">
+                    <div class="card">
+                        <h4>Goals</h4>
+                        <ul>
+                            <li>Never miss medication</li>
+                            <li>Keep appointments organized</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h4>Pain Points</h4>
+                        <ul>
+                            <li>Too many reminders across apps</li>
+                            <li>Hard to track what was taken</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <figure class="media">
+                    <img src="assets/persona-1.png" alt="Persona 1" data-lightbox />
+                    <figcaption>Persona card (replace with your exported image).</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="journey">
+            <h2>User Journey Map</h2>
+            <p>Show touchpoints, emotions, and pain points across the flow.</p>
+
+            <figure class="media">
+                <img src="assets/journey-map.png" alt="User journey map" data-lightbox />
+                <figcaption>User journey map (export from your tool).</figcaption>
+            </figure>
+        </section>
+
+        <section id="wireframes">
+            <h2>Wireframes & Iterations</h2>
+            <p>
+                Include multiple iterations, even the ones that didn’t work (as required).
+            </p>
+
+            <h3>Iteration 1</h3>
+            <div class="gallery">
+                <figure class="thumb">
+                    <img src="assets/wireframes/v1-home.png" alt="V1 Home wireframe" data-lightbox />
+                    <figcaption>V1 — Home</figcaption>
+                </figure>
+                <figure class="thumb">
+                    <img src="assets/wireframes/v1-reminder.png" alt="V1 Reminder wireframe" data-lightbox />
+                    <figcaption>V1 — Reminder</figcaption>
+                </figure>
+            </div>
+
+            <h3>Iteration 2</h3>
+            <div class="gallery">
+                <figure class="thumb">
+                    <img src="assets/wireframes/v2-home.png" alt="V2 Home wireframe" data-lightbox />
+                    <figcaption>V2 — Simplified navigation</figcaption>
+                </figure>
+            </div>
+
+            <div class="card">
+                <h3>What changed and why</h3>
+                <ul>
+                    <li>Reduced steps to log a dose (tap → confirm)</li>
+                    <li>Made appointments scannable with cards</li>
+                    <li>Moved secondary actions behind “More”</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="prototype">
+            <h2>Prototype</h2>
+            <p>
+                Embed your clickable prototype (Figma share link) or provide a button.
+            </p>
+
+            <div class="card">
+                <a class="btn" href="https://www.figma.com/proto/REPLACE_ME" target="_blank" rel="noreferrer">
+                    Open Prototype
+                </a>
+                <p class="muted">
+                    Tip: In Figma, use “Share → Anyone with the link → Copy link”.
+                </p>
+            </div>
+        </section>
+
+        <section id="testing">
+            <h2>Usability Testing</h2>
+            <h3>Plan</h3>
+            <ul>
+                <li><strong>Goals:</strong> validate reminder flow, appointment scheduling clarity, messaging discoverability</li>
+                <li><strong>Participants:</strong> __ users, mix of chronic condition experience + general users</li>
+                <li><strong>Tasks:</strong> log a medication, schedule an appointment, send a message</li>
+                <li><strong>Data:</strong> task success rate, time on task, confusion points, post-task rating</li>
+            </ul>
+
+            <h3>Key Findings</h3>
+            <div class="bullets">
+                <div class="bullet">⚠️ Users hesitated when confirming “Taken” vs “Skipped”.</div>
+                <div class="bullet">✅ Appointment card layout improved scannability.</div>
+                <div class="bullet">⚠️ “Message provider” label needed stronger affordance.</div>
+            </div>
+
+            <div class="card">
+                <h3>Iterations after testing</h3>
+                <ul>
+                    <li>Renamed actions: “Taken” / “Not taken” with a short tooltip</li>
+                    <li>Added primary CTA styling to messaging entry point</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="reflection">
+            <h2>Reflection</h2>
+            <p>
+                Write what the UX process changed for you, what surprised you, and what you’d do next.
+            </p>
+
+            <div class="quote">
+                “The biggest win was simplifying the ‘log dose’ interaction into a single clear decision.”
+            </div>
+        </section>
+
+        <section id="appendix">
+            <h2>Appendix</h2>
+            <ul>
+                <li><a href="#" download>Download research summary (optional)</a></li>
+                <li><a href="#" download>Download journey map (optional)</a></li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <p class="muted">© <span id="year"></span> Your Name • Hosted on GitHub Pages</p>
+        </footer>
+    </article>
+</main>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close image">×</button>
+    <img class="lightbox__img" id="lightboxImg" alt="" />
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
